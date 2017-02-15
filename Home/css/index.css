@@ -1,0 +1,129 @@
+@charset "utf-8";
+/* CSS Document */
+/* CSS Document */
+/* css 初始化 */
+/* 1.清除浏览器默认样式 */
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
+/* 2.针对性处理 */
+ol,ul{ list-style:none;}			/*清除列表默认风格*/
+textarea{ resize:none;}				/*文本域禁止拖拽*/
+img{ border:none; display:block;}	/*清除图片链接在ie下默认边框，图片底部默认的空白*/
+/* 3.设置全局样式 */
+body{ color:#3c3c3c; font-size:12px; font-family:"宋体";}
+a{color:#3c3c3c; text-decoration:none;}
+a:hover{color:#FFA304;}
+/* 4.定义常用类 */
+.w{ width:980px; margin:0 auto; }	/*版心*/
+.clearfix:after,.clearfix:before{ content:""; display:table;}
+.clearfix:after{ clear:both;}
+.clearfix{*zoom:1;}
+.fl{float:left;}
+.fr{float:right;}
+
+
+
+/* 网页页面主体部分 */
+
+/* 导航部分 */
+.header{background:#fff;height:80px;}
+.links{height:80px;/* background:url(../img/logo.png) no-repeat 32px -90px; */}
+.logotxt{
+    font-size: 30px;line-height: 80px;
+    float: left;width: 150px;
+    text-align: center;
+}
+.guanzhu{width:310px;height:15px;;padding:35px 0 30px 0}
+.guanzhu li{float:left;margin-right:5px;height:30px; width:90px;padding-bottom:20px;line-height:30px;}
+.guanzhu li a{display:inline-block;height:30px; width: 90px;background:url(../img/er-arr.png) no-repeat 56px center;color: #999}
+.guanzhu a.last{background-image:none;}
+
+/*二维码*/
+.weibo{position:relative;}
+.weibo-box{  background:#fff;padding: 10px;position: absolute; top:25px;left:-35px ;z-index: 2;display:none;}    
+   
+.weixin{position:relative;}
+.weixin-box{  background:#fff;padding: 10px;position: absolute; top:25px;left:-35px ;z-index: 2;display:none;}    
+   
+
+/*导航部分*/
+.nav-out{height: 42px;}
+.nav li{width: 122px;height: 42px; float:left;}
+.nav li a{width: 122px;height: 42px; float:left;text-align: center;font-size: 18px;color: #333;line-height: 42px;}
+ 
+/*下拉菜单*/ 
+.xiala{position:relative; z-index: 3;}
+/*第一个下拉菜单*/
+.sub-memu{padding:0 23px 50px;overflow: hidden;background: #fff; position:absolute;left:0;top:0;display:none}
+.xiala dl{overflow: hidden;background: #fff; float:left; margin-right: 24px;}
+.xiala dt{width: 294px;height: 40px;border-bottom:1px solid #666;margin-bottom: 16px;}
+.xiala dt a{width: 294px;height: 40px;display:inline-block;font-size: 18px;line-height: 40px;}
+.xiala  a:hover{color:#FFA304}
+.xiala dd{height:30px;width:100%;}
+.xiala dd a{font-size: 14px;color:#555;display:inline-block;height:30px;line-height: 30px;width:100%;}
+/*第二个下拉菜单*/
+.sub-memu1{padding:0 23px 50px;overflow: hidden;background:#fff;position:absolute;left:0;top:0;display:none}
+.xiala .sub-memu1 dl dd{width:auto;float:left;margin-right: 10px; }
+
+/*导航部分*/
+.banner{height: 553px;overflow:hidden;cursor:pointer; position:relative;}
+.banner ul{width:400%;position:relative;z-index:1 ;}
+.banner ul li{width:25%;height: 553px;float:left;position:absolute;left:0;top:0;display:none}
+
+.banner ol{width: 200px;height: 14px;text-align: center;position: absolute;bottom: 10px;left:0;z-index:2;overflow:hidden;bottom:10px;left:50%;margin-left: -50px;}
+.banner ol li{ width: 14px; height: 14px; background:url(../img/dot.png) no-repeat right top;float:left;margin:0 5px;display:block; }
+.banner ol li.current{background-position: left 0;}
+
+
+
+/*内容区域*/
+.content{height:500px;padding-top:30px;background:#fff}
+.content-title{height:140px;text-align: center;line-height: 36px;color:#666}
+.content-main{height:200px}
+.content-main li{float: left;margin-right: 40px;}
+.content-ft{background:url(../img/bg_01.jpg) no-repeat ; height:136px;}
+
+
+/*section区域*/
+.section{height:444px;cursor:pointer;overflow:hidden;}
+.section .li01{width: 489px;height: 394px;float:left;margin-right: 1px; position:relative;overflow:hidden;}
+.section .li01 p{width:100%;position:absolute;left:-500px;top:50%;margin-top:-20px;text-align: center; color:#ccc; font-size: 16px;} 
+.section .li01 .touming{width: 489px;height: 394px;   position: absolute; background:#000;top: 0px;left: 0px;}
+
+.section .li02{width: 489px;height: 394px;float:left;margin-right: 1px; position:relative;overflow:hidden;}
+.section .li02 p{width:100%;position:absolute;left:-500px;top:50%;margin-top:-20px;text-align: center; color:#ccc; font-size: 16px;} 
+.section .li02 .touming{width: 489px;height: 394px;   position: absolute; background:#000;top: 0px;left: 0px;}
+
+
+
+/*产品展示专区*/
+.pro{width: 982px;}
+.pro ul li{width: 161px;height: 289px;margin-right: 2px;float: left;border-right: 1px solid #cacaca;position:relative;overflow:hidden}
+.pro ul li a{position:absolute;left:0;top:0}
+
+/*隐藏的盒子*/
+
+.pro ul li span{width: 161px;height: 289px;display:block;position:absolute;bottom:-289px;left:0;}
+
+
+
+
+
+
+/*页脚部分*/
+.footer{overflow:hidden;padding:85px 0 20px;}
+/*每个模块*/
+.footer-main dl{width: 135px; padding: 0px 28px 0 0;display: inline-block;margin-bottom: 40px;float: left;}
+
+
+ .footer-main dt{width: 140px;margin-bottom: 10px;border-bottom: solid 1px #888;}
+.footer-main dt a{width: 140px;font-size: 16px;color: #333;line-height: 25px; bottom: 6px;padding-bottom: 6px;margin-bottom: 10px;}  
+
+.footer-main dd{width: 140px;}
+.footer-main dd a{font-size: 13px;line-height: 19px;color: #555;}
+
+
+.copyright{height:50px;width:300px;line-height: 50px;}
+
+   
+    
+    
