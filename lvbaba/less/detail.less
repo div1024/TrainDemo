@@ -1,0 +1,207 @@
+/* 
+* @Author: Marte
+* @Date:   2015-11-12 21:24:15
+* @Last Modified by:   Marte
+* @Last Modified time: 2015-11-17 09:25:41
+*/
+/*版心居中*/
+/*枚红色强调色*/
+@chushu:20rem;
+.wrap {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.header {
+  height:24px;
+  line-height: 2.2rem;
+  position: relative;
+  background-color: #fafafa;
+  padding: 10/@chushu;
+}
+/*大标题*/
+.header h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.return-arr{
+  border-left: 1px solid #d30775;
+  border-bottom: 1px solid #d30775;
+   width: 16/@chushu;height:16/@chushu; position:absolute;left:8/@chushu;top:50%;transform:rotate(45deg) translateY(-50%) ;}
+
+.shoucang{
+    width: 36/@chushu;
+    height: 36/@chushu;
+    background:url(../img/shoucang.png) no-repeat;
+    -webkit-background-size: 36/@chushu auto;
+    background-size: 36/@chushu auto;  position: absolute;
+  right: 56/@chushu;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+.home{
+      width: 36/@chushu;
+       height: 36/@chushu;
+    background:url(../img/home.png) no-repeat;
+    -webkit-background-size: 36/@chushu auto;
+    background-size: 36/@chushu auto;  position: absolute;
+  right:0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+/*banner区域*/
+/* 本例子css -------------------------------------- */
+.focus {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.focus .hd {
+  width: 100%;
+  height: 0.55rem;
+  position: absolute;
+  z-index: 1;
+  bottom: 0.25rem;
+  text-align: center;
+}
+.focus .hd ul {
+  display: inline-block;
+  height: 0.25rem;
+  padding: 0.15rem 0.25rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+  font-size: 0;
+  vertical-align: top;
+}
+.focus .hd ul li {
+  display: inline-block;
+  width: 0.25rem;
+  height: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+  background: #8C8C8C;
+  margin: 0 0.25rem;
+  vertical-align: top;
+  overflow: hidden;
+}
+.focus .hd ul .on {
+  background: #FE6C9C;
+}
+.focus .bd {
+  position: relative;
+  z-index: 0;
+}
+.focus .bd li img {
+  width: 100%;
+  background: url(images/loading.gif) center center no-repeat;
+}
+.focus .bd li a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* 取消链接高亮 */
+}
+
+
+/*景点介绍*/
+.details{
+  padding:5/@chushu;background: #fff;
+}
+.details p{line-height: 22/@chushu;text-indent: 2rem; font-size:85%;color: #010101;}
+.details .tedian{font-size: 70%;color:#666;overflow:hidden;}
+.details .price{width: 100/@chushu;height:auto;}
+.price i:nth-of-type(1){font-size: 60%;
+    color: #d30775;}
+.price i:nth-of-type(2){font-size: 95%;
+    color: #d30775;} 
+.price i:nth-of-type(3){font-size: 45%;
+    color: #666;}
+
+
+/*推荐理由*/
+
+
+ .reason .r-title{padding-left: 10/@chushu;line-height: 34/@chushu;color: #666;font-size:60%;
+ }
+.reason .r-details{padding: 10/@chushu 20/@chushu 10/@chushu 16/@chushu;font-size:70%;color: #666;background-color: #fff; border-top: 1/@chushu solid #ddd;line-height: 20/@chushu;
+    border-bottom: 1/@chushu solid #ddd;position: relative;
+
+}
+
+.reason .r-details i{font-size: 70%;color: #010101;}
+.reason .r-details p{font-size: 70%;color: #666;line-height:20/@chushu;
+}
+.arr-down{
+  display:block;
+  width: 7/@chushu;
+  height: 7/@chushu;
+position: absolute;  bottom: 10/@chushu; right: 15/@chushu;border-bottom: 1/@chushu solid #666; border-right: 1/@chushu solid #666;transform:rotate(45deg);  }
+
+/*选择日期*/
+.sel-date{margin-bottom: 10/@chushu;}
+.sel-date span{
+    padding-left: 10/@chushu; color: #666;font-size: 60%; line-height: 20/@chushu;
+}
+
+.date{
+   padding: 7/@chushu 10/@chushu; border-top: 1/@chushu solid #ddd;border-bottom: 1/@chushu solid #ddd; background-color: #fff;overflow: hidden;position: relative;
+}
+.date li{
+  font-size:75%;
+    line-height: 28/@chushu;
+    width: 17%; float: left; text-align: center;  border: 1/@chushu solid #ddd;margin-right: 5/@chushu;
+}
+.date li:nth-last-of-type(1):after{ content: "";  width: 10/@chushu; height: 10/@chushu; border-right: 1/@chushu solid #666; border-bottom: 1/@chushu solid #666;transform: translateY(-50%) rotate(-45deg); position: absolute; top: 50%; right: 13/@chushu;}
+
+
+.xiangqing{border-top: 1/@chushu solid #ddd;border-bottom: 1/@chushu solid #ddd; line-height: 24/@chushu; background-color: #fff;height: 45/@chushu;
+}
+.xiangqing li{ width: 25%;line-height: 45/@chushu;text-align: center;float: left; color: #666;font-size: 70%;}
+   
+.detail-box{ 
+  padding:10/@chushu; background: #fff;
+    line-height: 24/@chushu;margin-bottom: 10/@chushu;
+}
+.detail-box p{color:#f60;font-size: 70%;font-weight: bold;}
+.detail-box .tuwen{line-height: 30/@chushu;font-size: 60%;}
+   
+
+ /* 购物说明*/
+.gouwu-s{padding: 0 10/@chushu;
+    background-color: #fff; border-top: 1/@chushu solid #ddd;border-bottom: 1/@chushu solid #ddd;
+    overflow: hidden;line-height: 30/@chushu;
+}
+.gouwu-s i{ width: 23/@chushu;
+    height: 26/@chushu; background: url(../img/shopping.png) no-repeat; background-size: 23/@chushu 26/@chushu;margin:10/@chushu 0;}
+   .gouwu-s span{color:#666;font-size: 60%;margin:10/@chushu 0 10/@chushu 5/@chushu;}
+
+  /*按钮*/
+.btn-box{
+  width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    overflow:hidden ;
+   
+    z-index: 1;
+    line-height: 48/@chushu;
+}
+.btn-box .btn01,.btn-box .btn02,{
+  width: 50%;
+  float:left;  color: #fff;  text-align: center;
+     font-size: 75%
+}
+.btn01{
+  background-color: #ff740d;
+}
+.btn02{
+  background-color: #d30775;
+}

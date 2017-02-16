@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html> 
+<!-- 第一步，先把这个lang删掉 -->
+    <head>
+        <meta charset="utf-8">
+         <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telphone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- 适应移动端end -->   
+    <title>手机端首页——驴爸爸</title>
+        <link rel="stylesheet" type="text/css" href="css/global.css" />
+        <link rel="stylesheet" type="text/css" href="css/detail.css" />
+       <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+       <script src="js/TouchSlide.1.1.js" type="text/javascript"></script> 
+       <script src="js/index.js" type="text/javascript"></script>
+    
+         
+            
+    </head>
+
+    <body>
+        <section class="wrap">
+        <!-- 大区域来当版心 -->
+        <header class="header">
+            <h1>国内详情</h1>
+           <!-- 返回箭头 -->
+           <div class="return-arr"></div>
+        <!-- 右侧 -->
+        <div class="shoucang"></div>   
+        <a href="" class="home"></a>
+
+
+
+        </header>
+        <!-- banner区域 -->
+        <div id="focus" class="focus">
+                <div class="hd">
+                    <ul></ul>
+                </div>
+                <div class="bd">
+                    <ul>
+                            <li><a href="#"><img _src="img/ban01.jpg" src="img/ban01.jpg" /></a></li>
+                            <li><a href="#"><img _src="img/ban02.jpg" src="img/ban02.jpg"/></a></li>
+                            <li><a href="#"><img _src="img/ban03.jpg" src="img/ban03.jpg"/></a></li>
+                            <li><a href="#"><img _src="img/ban04.jpg" src="img/ban04.jpg"/></a></li>
+                    </ul>
+                </div>
+            </div>
+<script type="text/javascript">
+                TouchSlide({ 
+                    slideCell:"#focus",
+                    titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+                    mainCell:".bd ul", 
+                    effect:"left", 
+                    autoPlay:true,//自动播放
+                    autoPage:true, //自动分页
+                    switchLoad:"_src" //切换加载，真实图片路径为"_src" 
+                });
+            </script>
+
+<div class="details">
+    <p>【醉美香格里拉】丽江古城、玉龙雪山、丽江千古情表演、香格里拉普达措双飞五天（香格里拉升级特色藏式酒店、丽江两晚赠送升级纳西庭院式酒店）</p>
+    <div class="tedian">
+        <span class="fl">跟团游 |</span>
+        <span class="fl">广州出发</span>
+        <span class="price fr">
+            <i>¥</i>
+            <i>2680</i>
+            <i>起/人</i>
+        </span>
+    </div>
+
+</div>    <!-- 详情的div -->
+
+        <div class="reason">
+            <span class="r-title">推荐理由</span>
+            <div class="r-details">
+                <i>产品经理推荐：</i>
+            <p>1餐饮： 旅游过程中餐饮食品的卫生、健康已经成为游客日益担心的社会问题，拒绝地沟油、腐败变质食品流向旅游餐桌是我们的良知和责任，也是我们共同的道德底线。精心安排正餐20元/人，十菜一汤，特别赠送：香格里拉－土司圣宴280元/人、丽江—三文鱼宴40元/人</p>
+            <span class="arr-down"></span>
+            </div>
+
+        </div>    
+
+<!-- 选择日期 -->
+<div class="sel-date">
+    <span>查看和选择日期</span>
+    <ul class="date">
+        <li>11/18</li>
+        <li>11/20</li>
+        <li>11/22</li>
+        <li>11/23</li>
+        <li>11/25</li>
+        
+    </ul>
+
+
+</div>
+
+<!-- 详情行程等tab栏 -->
+    <ul class="xiangqing">
+        <li>详情</li>
+        <li>行程</li>
+        <li>须知</li>
+        <li>点评(0)</li>
+
+    </ul>
+
+<div class="detail-box">
+    <p>温馨提示：此线路行程紧凑，强度较大，加之云南地处高原，不同人群会有不同的高原反应，出于游客身体健康考虑， 仅针对29-55岁客人；55周岁以上老人须在青壮年的亲友陪同下方可参团，60岁以上老年人参团须填写《参团健康情况》《免责声明》，2-12岁的儿童不能按照成人操作，2人起预定，同批少于6人，为您带来不便，敬请见谅！</p>
+
+    <div class="tuwen">
+        <span>普达措森林公园</span>
+        <img src="img/ban01.jpg" alt="" />
+
+    </div>
+    <div class="tuwen">
+        <span>普达措森林公园</span>
+        <img src="img/ban01.jpg" alt="" />
+
+    </div>
+    <div class="tuwen">
+        <span>普达措森林公园</span>
+        <img src="img/ban02.jpg" alt="" />
+
+    </div>
+    <div class="tuwen">
+        <span>普达措森林公园</span>
+        <img src="img/ban03.jpg" alt="" />
+
+    </div>
+    <div class="tuwen">
+        <span>普达措森林公园</span>
+        <img src="img/ban04.jpg" alt="" />
+
+    </div>
+
+</div>
+
+<!-- 购物说明 -->
+<div class="gouwu-s">
+    
+   <i class="fl"></i>
+    <span class="fl">购物说明</span>
+</div>
+
+<!-- 按钮 -->
+<ul class="btn-box">
+    <li class="btn01">电话咨询</li>
+    <li class="btn02">立即购买</li>
+</ul>
+
+        </section>
+    </body>
+</html>
